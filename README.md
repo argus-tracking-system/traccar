@@ -51,3 +51,13 @@ Please read [build from source documentation](https://www.traccar.org/build/) on
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+## Docker features
+
+To build a local `traccar` docker image, use:
+
+    docker build -t traccar .
+
+To run it, use:
+
+    docker run -it -e "FORWARD_URL=https://your-forward-url-here" traccar
